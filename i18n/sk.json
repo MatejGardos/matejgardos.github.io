@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Domov",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Softvérový inžinier a herný vývojár",
+    "subtitle": "Vyvíjam softvér naprieč platformami, od hier v Unity po webové aplikácie.",
+    "downloadCV": "Stiahnuť CV",
+    "skillsTitle": "Moje zručnosti",
+    "languagesTitle": "Programovacie jazyky",
+    "techTitle": "Technológie a nástroje"
+  },
+  "projects": {
+    "title": "Projekty",
+    "escape": {
+      "title": "Escape the Void",
+      "desc": "Bullet-heaven hra vyvinutá počas 2-týždňového game jamu pomocou Unity a C#."
+    },
+    "trainer": {
+      "title": "Trainer — Portál pre podporu výučby programovania",
+      "desc": "Webový vzdelávací portál podporujúci výučbu programovania pre študentov a učiteľov. Moja bakalárska práca pridáva do platformy statickú analýzu C/C++ kódu. Backend je postavený v Kotlin/Spring a frontend v Node/Vue3/Vuetify3."
+    },
+    "space": {
+      "title": "Space Ride",
+      "desc": "2D vesmírna hra implementovaná v C++ s použitím SDL2, podporujúca natívne spustenie aj WebAssembly nasadenie na webe."
+    }
+  },
+  "contact": {
+    "title": "Kontakt"
+  },
+  "spaceRide": {
+    "back": "Späť",
+    "fullscreen": "Celá obrazovka",
+    "mute": "Stíšiť"
+  }
+}

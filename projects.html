@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Projects</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/projects.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<section class="project-section">
+	<h2 data-i18n="projects.title">Projects</h2>
+
+	<div class="project-grid">
+
+		<!-- Escape the Void -->
+		<div class="project-card"
+			onclick="window.open('https://matt04.itch.io/escape-the-void', '_blank')">
+			<div class="project-icon">
+				<img src="assets/icons/unity.svg" alt="Unity">
+			</div>
+			<div class="project-content">
+				<div class="project-header">
+					<h3 data-i18n="projects.escape.title">Escape the Void</h3>
+					<!-- <a href=""
+						target="_blank"
+						class="github-link"
+						title="View source code on GitHub"
+						onclick="event.stopPropagation();">
+						<img src="assets/icons/github.svg" alt="GitHub">
+					</a> -->
+				</div>
+				<p data-i18n="projects.escape.desc">
+					A bullet-heaven game developed during a 2-week game jam using Unity and C#.
+				</p>
+			</div>
+		</div>
+
+		<!-- Trainer -->
+		<div class="project-card"
+				onclick="window.open('https://trainer.ksi.fit.cvut.cz/info', '_blank')">
+			<div class="project-icon">
+				<img src="assets/icons/trainer.svg" alt="Trainer">
+			</div>
+			<div class="project-content">
+				<div class="project-header">
+					<h3 data-i18n="projects.trainer.title">Trainer — A Portal Supporting Programming Education</h3>
+					<!--
+					<a href="GITHUB_LINK_HERE"
+						target="_blank"
+						class="github-link"
+						title="View source code on GitHub"
+						onclick="event.stopPropagation();">
+						<img src="assets/icons/github.svg" alt="GitHub">
+					</a>
+					-->
+				</div>
+				<p data-i18n="projects.trainer.desc">
+					A web-based educational portal supporting programming education for students and teachers.
+					My bachelor thesis adds a static analysis feature for C/C++ code within the platform.
+					Built with Kotlin/Spring on the backend and Node/Vue3/Vuetify3 for the frontend.
+				</p>
+			</div>
+		</div>
+
+		<!-- Space Ride -->
+		<div class="project-card"
+			onclick="window.open('projects/space-ride/SpaceRide.html', '_self')">
+			<div class="project-icon">
+				<img src="assets/icons/cpp.svg" alt="C++">
+			</div>
+			<div class="project-content">
+				<div class="project-header">
+					<h3 data-i18n="projects.space.title">Space Ride</h3>
+					<a href="https://github.com/MatejGardos/Space-Ride-SDL2"
+						target="_blank"
+						class="github-link"
+						title="View source code on GitHub"
+						onclick="event.stopPropagation();">
+						<img src="assets/icons/github.svg" alt="GitHub">
+					</a>
+				</div>
+				<p data-i18n="projects.space.desc">
+					A 2D space game implemented in C++ with SDL2, supporting native execution and WebAssembly deployment for the web.
+				</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script src="js/script.js"></script>
+<script>
+fetch("navbar.html")
+	.then(res => res.text())
+	.then(html => {
+		document.getElementById("navbar-placeholder").innerHTML = html;
+
+		const hamburger = document.querySelector('.hamburger');
+		const navLinks = document.querySelector('.nav-links');
+
+		if (hamburger && navLinks) {
+			hamburger.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+			});
+		}
+});
+</script>
+
+</body>
+</html>

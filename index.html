@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<section class="hero">
+	<div class="hero-content">
+		<h1 data-i18n="home.title">Software Engineer & Game Developer</h1>
+		<p data-i18n="home.subtitle">
+			I develop software across platforms, from Unity games to web apps.
+		</p>
+		<a href="assets/CV.pdf" target="_blank" class="cta-button" data-i18n="home.downloadCV">Download CV</a>
+	</div>
+</section>
+
+<section class="tech-section">
+	<h2 data-i18n="home.skillsTitle">My Skills</h2>
+	<div class="tech-grid">
+
+		<div class="tech-category">
+			<h3 data-i18n="home.languagesTitle">Languages</h3>
+			<div class="tech-icons">
+				<img src="assets/icons/c.svg" alt="C" title="C">
+				<img src="assets/icons/cpp.svg" alt="C++" title="C++">
+				<img src="assets/icons/kotlin.svg" alt="Kotlin" title="Kotlin">
+				<img src="assets/icons/rust.svg" alt="Rust" title="Rust">
+				<img src="assets/icons/python.svg" alt="Python" title="Python">
+				<img src="assets/icons/csharp.svg" alt="C#" title="C#">
+				<img src="assets/icons/javascript.svg" alt="JavaScript" title="JavaScript">
+				<img src="assets/icons/scala.svg" alt="Scala" title="Scala">
+			</div>
+		</div>
+
+		<div class="tech-category">
+			<h3 data-i18n="home.techTitle">Technologies & Tools</h3>
+			<div class="tech-icons">
+				<img src="assets/icons/git.svg" alt="Git" title="Git">
+				<img src="assets/icons/docker.svg" alt="Docker" title="Docker">
+				<img src="assets/icons/sql.svg" alt="SQL" title="SQL">
+				<img src="assets/icons/vue.svg" alt="Vue.js" title="Vue.js">
+				<img src="assets/icons/spring.svg" alt="Spring" title="Spring">
+				<img src="assets/icons/unity.svg" alt="Unity" title="Unity">
+				<img src="assets/icons/wasm.svg" alt="Wasm" title="Wasm">
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<script src="js/script.js"></script>
+<script>
+fetch("navbar.html")
+	.then(res => res.text())
+	.then(html => {
+		document.getElementById("navbar-placeholder").innerHTML = html;
+
+		const hamburger = document.querySelector('.hamburger');
+		const navLinks = document.querySelector('.nav-links');
+
+		if (hamburger && navLinks) {
+			hamburger.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+			});
+		}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpaceRide</title>
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/game.css">
+	<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+	<div id="gameContainer">
+		<canvas id="canvas" width="640" heigh="480" tabindex="-1"></canvas>
+	</div>
+
+	<div class="game-buttons">
+    <button class="back-button" data-i18n="spaceRide.back" onclick="history.back()">Back</button>
+    <button class="fullscreen-button" data-i18n="spaceRide.fullscreen" onclick="toggleFullScreen()">Full Screen</button>
+		<!-- <button class="mute-button"  data-i18n="spaceRide.mute" onclick="toggleMute()">Mute</button> -->
+	</div>
+
+	<script>
+		var Module = {
+			canvas: document.getElementById('canvas'),
+			print: function(text) { console.log(text); },
+			printErr: function(text) { console.error(text); },
+			onRuntimeInitialized: function() {
+				console.log("SpaceRide loaded and ready!");
+			}
+		};
+	</script>
+	<script src="../../js/script.js"></script>
+	<script src="../../js/game.js"></script>
+	<script src="SpaceRide.js"></script>
+</body>
+</html>

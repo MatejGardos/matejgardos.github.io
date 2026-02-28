@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Software Engineer & Game Developer",
+    "subtitle": "I develop software across platforms, from Unity games to web apps.",
+    "downloadCV": "Download CV",
+    "skillsTitle": "My Skills",
+    "languagesTitle": "Languages",
+    "techTitle": "Technologies & Tools"
+  },
+  "projects": {
+    "title": "Projects",
+    "escape": {
+      "title": "Escape the Void",
+      "desc": "A bullet-heaven game developed during a 2-week game jam using Unity and C#."
+    },
+    "trainer": {
+      "title": "Trainer — A Portal Supporting Programming Education",
+      "desc": "A web-based educational portal supporting programming education for students and teachers. My bachelor thesis adds a static analysis feature for C/C++ code within the platform. Built with Kotlin/Spring on the backend and Node/Vue3/Vuetify3 for the frontend."
+    },
+    "space": {
+      "title": "Space Ride",
+      "desc": "A 2D space game implemented in C++ with SDL2, supporting native execution and WebAssembly deployment for the web."
+    }
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "spaceRide": {
+    "back": "Back",
+    "fullscreen": "Full Screen",
+    "mute": "Mute"
+  }
+}

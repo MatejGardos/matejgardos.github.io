@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pZ..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div id="navbar-placeholder"></div>
+
+<section class="contact-section">
+	<h2 data-i18n="contact.title">Contact</h2>
+	<div class="contact-list">
+    <div class="contact-item">
+			<a href="mailto:matej.gardos04@gmail.com">
+				<div class="contact-icon">
+					<img src="assets/icons/email.svg" alt="Email">
+				</div>
+				matej.gardos04@gmail.com
+			</a>
+    </div>
+
+    <div class="contact-item">
+			<a href="https://github.com/MatejGardos" target="_blank">
+				<div class="contact-icon">
+					<img src="assets/icons/github.svg" alt="Github">
+				</div>
+				github.com/MatejGardos
+			</a>
+    </div>
+
+    <div class="contact-item">
+			<a href="https://www.linkedin.com/in/matej-gardo%C5%A1-200491289/" target="_blank">
+				<div class="contact-icon">
+					<img src="assets/icons/linkedin.svg" alt="LinkedIn">
+				</div>
+				linkedin.com/in/matej-gardoš
+			</a>
+    </div>
+	</div>
+</section>
+
+<script src="js/script.js"></script>
+<script>
+fetch("navbar.html")
+	.then(res => res.text())
+	.then(html => {
+		document.getElementById("navbar-placeholder").innerHTML = html;
+
+		const hamburger = document.querySelector('.hamburger');
+		const navLinks = document.querySelector('.nav-links');
+
+		if (hamburger && navLinks) {
+			hamburger.addEventListener('click', () => {
+				navLinks.classList.toggle('active');
+			});
+		}
+});
+</script>
+
+</body>
+</html>

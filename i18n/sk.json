@@ -25,12 +25,16 @@
     "space": {
       "title": "Space Ride",
       "desc": "2D vesmírna hra implementovaná v C++ s použitím SDL2, podporujúca natívne spustenie aj WebAssembly nasadenie na webe."
+    },
+    "sector": {
+      "title": "Sector Zero",
+      "desc": "Asteroidová strieľačka napísaná v jazyku C, ktorá beží priamo na x86 hardvéri bez operačného systému."
     }
   },
   "contact": {
     "title": "Kontakt"
   },
-  "spaceRide": {
+  "game": {
     "back": "Späť",
     "fullscreen": "Celá obrazovka",
     "mute": "Stíšiť"

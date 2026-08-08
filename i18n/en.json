@@ -25,12 +25,16 @@
     "space": {
       "title": "Space Ride",
       "desc": "A 2D space game implemented in C++ with SDL2, supporting native execution and WebAssembly deployment for the web."
+    },
+    "sector": {
+      "title": "Sector Zero",
+      "desc": "A bare-metal asteroid shooter written in C and running directly on x86 hardware without an operating system."
     }
   },
   "contact": {
     "title": "Contact"
   },
-  "spaceRide": {
+  "game": {
     "back": "Back",
     "fullscreen": "Full Screen",
     "mute": "Mute"
